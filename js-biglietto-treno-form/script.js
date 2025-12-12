@@ -4,7 +4,6 @@
 const nameField = document.getElementById("user-name");
 const courseField = document.getElementById("course");
 const choiceField = document.getElementById("choice");
-const buttonActive = document.getElementById("button");
 
 
 
@@ -47,13 +46,13 @@ form.addEventListener("submit", (event) => {
     //SE USER E' MINORENNE (SCONTO 20%)
     if (choiceField.value === "minor") {
         //applica sconto del 20%
-        const prezzoScontato = prezzoTrattaTot * 0.80;
+        prezzoTrattaTot = prezzoTrattaTot * 0.80;
         //risultato = `il costo del tuo biglietto è scontato del 20% e corrisponde a ${prezzoScontato.toFixed(2)}€`;
         messaggio = "sconto 20%";
         //console.log(prezzoScontato + " " + "euro")
         //SE USER E' OVER 65 (SCONTO 40%)
     } else if (choiceField.value === "major+") {
-        const prezzoScontato = prezzoTrattaTot * 0.60;
+        prezzoTrattaTot = prezzoTrattaTot * 0.60;
         //risultato = `il costo del tuo biglietto è scontato del 40% e corrisponde a ${prezzoScontato.toFixed(2)}€`;
         messaggio = "sconto 40%"
         //console.log(prezzoScontato + " " + "euro")
