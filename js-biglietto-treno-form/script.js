@@ -1,6 +1,6 @@
 //PARTE DI PREPARAZIONE
 
-//SELEZIONO TUTTI I CAMPI (INPUT/SELECT)
+//SELEZIONO TUTTI I CAMPI (INPUT/SELECT) RICHIAMO ELEMENTI DA HTML
 const nameField = document.getElementById("user-name");
 const courseField = document.getElementById("course");
 const choiceField = document.getElementById("choice");
@@ -27,7 +27,7 @@ const buttonReset = document.getElementById("reset")
 
 
 
-//CALCOLO SCONTO
+
 //ELABORAZOINE
 
 form.addEventListener("submit", (event) => {
@@ -38,22 +38,20 @@ form.addEventListener("submit", (event) => {
 
     //INIZIALIZZAZIONE COSTANTI PER CONDIZIONE
     //let risultato;
-    let trattaInt = parseInt(courseField.value);
+    let trattaInt = parseInt(courseField.value);//CONVERSIONE
     let prezzoTrattaTot = trattaInt * prezzoKm;
-    let messaggio;
-    //console.log(prezzoTrattaTot)
+    let messaggio;//CARD
 
-
-
+    //CALCOLO SCONTO
     //VERIFICO ETA' E CALCOLO SCONTO
-    //SE USER HA ETA'<= A 18 (SCONTO 20%)
+    //SE USER E' MINORENNE (SCONTO 20%)
     if (choiceField.value === "minor") {
         //applica sconto del 20%
         const prezzoScontato = prezzoTrattaTot * 0.80;
         //risultato = `il costo del tuo biglietto è scontato del 20% e corrisponde a ${prezzoScontato.toFixed(2)}€`;
         messaggio = "sconto 20%";
         //console.log(prezzoScontato + " " + "euro")
-        //SE USER HA ETA'>= A 65 (SCONTO 40%)
+        //SE USER E' OVER 65 (SCONTO 40%)
     } else if (choiceField.value === "major+") {
         const prezzoScontato = prezzoTrattaTot * 0.60;
         //risultato = `il costo del tuo biglietto è scontato del 40% e corrisponde a ${prezzoScontato.toFixed(2)}€`;
