@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="title">Calcola il prezzo del tuo biglietto</h1>
+        <div class="container">
+            <div class="section-form">
+                <form action="">
+                    <input id="user-name" type="text" placeholder="Nome e Cognome" required>
+                    <input id="course" type="text" placeholder="km da percorrere"required>
+                    <select id="choice" name="scelta" id="">
+                        <option value="minor">Minorenni</option>
+                        <option value="major">Maggiorenni</option>
+                        <option value="major+">Over 65</option>
+                    </select>
+                    <button id="button">Genera</button>
+                </form>
+                <button id="reset">Annulla</button>
+            </div>
+            <h2>Biglietto generato</h2>
+            <div>
+                <p id="risultato"></p>
+            </div>
+
+            <!--TABELLA BIGLIETTO-->
+            <table id="table-info" class="display">
+                <thead>
+                    <tr>
+                        <th>Nome passeggero</th>
+                        <th>Offerta</th>
+                        <th>Carrozza</th>
+                        <th>Codice CP</th>
+                        <th>Costo biglietto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="tab-name"></td>
+                        <td id="tab-offerta"></td>
+                        <td id="tab-carrozza"></td>
+                        <td id="tab-cp"></td>
+                        <td id="tab-costo"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

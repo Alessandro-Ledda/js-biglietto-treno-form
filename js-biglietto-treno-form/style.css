@@ -1,0 +1,83 @@
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: darkred;
+    height: 100vh;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.section-form{
+    background-color: white;
+    border-radius: 25px;
+}
+
+h1{
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+h1,h2{
+    text-align: center;
+    color: white;
+}
+h2{
+    margin-top: 50px;
+}
+
+form{
+    margin-left: 10%;
+    padding-top: 30px;
+}
+
+.display{
+    display: none;
+}
+
+input, select{
+    padding: 10px 0;
+    border-radius: 7px;
+    width: 200px;
+    margin-left: 30px;
+}
+
+
+button{
+    padding: 10px 0;
+    width: 70px;
+    color: darkred;
+    font-size: 15px;
+    
+}
+
+#reset{
+    margin-left: 50%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+table{
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid yellow;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+
+td{
+    width: 20%;
+    height: 20px;
+    text-align: center;
+}
+th{
+    height: 50px;
+}
+
